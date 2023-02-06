@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags-->
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple website of Raneesh's portefolio using html,css,javascript">
+        <meta name="keywords" content="raneesh, software engineer, web designer" />
+        <meta name="author" content="Raneesh Prakash Boolkah" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <script src="https://kit.fontawesome.com/28541c4673.js" crossorigin="anonymous"></script>
+    </head>
+    <!--Home section start-->
+    <div id="home"><div class="background-image">
+        <!-- Navigation bar start-->
+        <div class="navigation-bar">
+            <nav>
+                <img src="Images/Logo.png" class="logo">
+                <div class="holder">
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#portefolio">Portefolio</a></li>
+                        <li><a href="#programming-skills">Programming Skills</a></li>
+                        <li><a href="#certification">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+        </div>
+        <!--Navigation bar ends-->
+        <div class="header-text">
+            <h1><span>Hello</span> there!</h1>
+            <p> I'm <span>Raneesh Prakash Boolkah</span>.</p>
+            <p>A software Engineering student <br> at the <span>University Of Mauritius </span>improving my skills
+                in<br><span class="auto-type"></span>.</p>
+        </div>
+    </div></div>
+    <!--Home end-->
+    <!--About section start-->
+    <div id="about">
+        <div class="holder">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Background.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="description">About <span>Me</span></h1>
+                    <p>My name is Raneesh Prakash Boolkah a student at the University of Mauritius born in 2002. I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and
+                    am keen and very willing to learn and develop new skills. I have an active and dynamic approach to work and getting
+                    things done. I am determined and decisive. Below you can have a preview on my education, work experience and skills.</p>
+
+
+                    <div class="subtitles">
+                        <p class="subtitles-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="subtitles-links" onclick="opentab('experience')">Experience</p>
+                        <p class="subtitles-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="subtitles-content active-tab" id="education">
+                        <ul>
+                            <li><span>School Certificate(SC)</span><br>Royal College Curepipe</li>
+                            <li><span>Higher School Certificate(HSC)</span><br>Royal College Curepipe</li>
+                            <li><span>Bsc Software Engineering(Hons)</span><br>University Of Mauritius</li>
+                        </ul>
+                    </div>
+                    <div class="subtitles-content" id="experience">
+                        <ul>
+                            <li><span>07/2021 - 08/2021</span><br><b>Operator at Alpinia LTD</b>, Ebene</li>
+                            <li><span>10/2022 - 11/2022</span><br><b>Internship at the Bank Of Mauritius</b>, Port-Louis</li>
+                            <li><span>Bsc Software Engineering(Hons)</span><br><b>University Of Mauritius</b>, Reduit</li>
+                        </ul>
+                    </div>
+                    <div class="subtitles-content" id="skills">
+                        <ul> 
+                            <li><span>Programming</span><br>Programming languages learnt <b>C++</b>, <b>html5</b>, <b>css</b> & <b>sql</b></li>
+                            <li><span>Web Development</span><br><b>Front-end</b> web development using html5,CSS and Js.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Aboout section end-->
+    <!-- Education section start-->
+    <div id="education">
+        <div class="holder">
+            <h1 class="title"><span>Educa</span>tion</h1>
+        </div>
+        <div class="timeline">
+            <div class="timebox left-container">
+                <img src="Images/rcc logo.jpg">
+                <div class="text-box">
+                    <h2>School Certificate</h2>
+                    <small>2017 - 2018</small>
+                    <p>Awarded in 2018 after taking the Cambridge Assessment International Education Examnination in the following subjects; Design and Technology, French, Additional Mathematics, Computer Science, Mathematics, Physics, Chemistry and English Language.</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="timebox right-container">
+                <img src="Images/rcc logo.jpg">
+                <div class="text-box">
+                    <h2>Higher School Certificate</h2>
+                    <small>201 - 2021</small>
+                    <p>Awarded in 2021 after taking the Cambridge Assessment International Education Examnination in the following
+                        subjects; Design and Technology, Mathematics, Physics as advanced level subjects with French langauge and English langauge(General Paper) as ordinary level subjects.</p>
+                        <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="timebox left-container">
+                <img src="Images/UoM-Logo.jpg">
+                <div class="text-box">
+                    <h2>Bsc Software Engineering(Hons)</h2>
+                    <small>2021 - Current</small>
+                    <p>Currently enrolled as a software engineer student at the University Of Mauritius where I am expanding my knowledge on any related software oriented skills.</p>
+                        <span class="left-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Education section end-->
+    <!--Portefolio section start-->
+    <div id="portefolio">
+        <div class="holder">
+            <h1 class="title">My <span>Projects</span></h1>
+            <div class="slider-container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides --> 
+                        <div class="swiper-slide"><img src="Images/Screenshot (35).png" ></div>
+                        <div class="swiper-slide"><img src="Images/Screenshot (36).png" ></div>
+                        <div class="swiper-slide"><img src="Images/Screenshot (37).png" ></div>
+                        <div class="swiper-slide"><img src="Images/game2.jpg"></div>
+                        <div class="swiper-slide"><img src="Images/game1.jpg"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!--Portefolio section end--> 
+    <!--Programming skills section start-->
+    <div id="programming-skills">
+        <div class="holder">
+            <h1 class="title"><span>Programming</span> Skills</h1>
+            <div class="card-container">
+                <div class="card">
+                    <div class="percent" style="--clr:#0ff0fc; --num:55;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h3>55<span>%</span></h3>
+                            <p>Html</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#BC13FE; --num:65;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h3>65<span>%</span></h3>
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#0F5EFE; --num:60;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h3>60<span>%</span></h3>
+                            <p>Css</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#39FF14; --num:70;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h3>70<span>%</span></h3>
+                            <p>sql</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Programming skills section end-->
+    <!--Certification section start-->
+    <div id="certification">
+        <div class="holder">
+            <h1 class="title">Certifi<span>cations</span></h1>
+            <div class="certificates-list">
+                <div class="certificates">
+                    <img src="Images/cert1.jpg" >
+                    <div class="layer">
+                        <h3>Duke Of Edinburgh's Sliver Award</h3>
+                        <p>The following certificate was awarded after completing 6 months of volunteer community work, 6 months of learning a new skill, 6 months of physical sports and ending with an adventurous journey.  
+                        </p>
+                        <a href="https://www.dofe.org/about/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificates">
+                    <img src="Images/cert2.jpg">
+                    <div class="layer">
+                        <h3>Duke Of Edinburgh's Bronze Award</h3>
+                        <p>The following certificate was awarded after completing 3 months of volunteer community work, 3 months of learning a new
+                        skill, 3 months of physical sports and ending with an adventurous journey.
+                        </p>
+                        <a href="https://www.dofe.org/about/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificates">
+                    <img src="Images/cer3.jpg">
+                    <div class="layer">
+                        <h3>Introduction to Pratical Electonics Certificate</h3>
+                        <p>After several pratical including soft-soldering on copper board or designing short circuits on a bread-board. The following certificate was awarded.
+                        </p>
+                        <a href="https://www.schoolofelectronics.mu/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificates">
+                    <img src="Images/cer4.jpg">
+                    <div class="layer">
+                        <h3>Advanced Electonics Certificate</h3>
+                        <p>This certificate was awarded after having carried out a mini-project consisitng of building a 220v-12v a.c power supply.
+                        </p>
+                        <a href="https://www.schoolofelectronics.mu/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Certification section end-->
+    <!-- Contact section start-->
+    <div id="contact">
+        <div class="holder">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span>Contact</span> ME</h1>
+                    <p><i class="fa-solid fa-envelope"></i>raneeshboolkah@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+230 57600052</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Mauritius</p>
+                    <a href="Images/CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn3">Send message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact section end-->
+    <!--Footer start-->
+    <footer>
+        <ul class="socials">
+            <li><a href="https://wa.me/qr/YSOPF2T2PMVHC1"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.snapchat.com/add/rushpb?share_id=_bgUSqqsVDc&locale=en-GB"><i class="fa-brands fa-snapchat"></i></a></li>
+            <li><a href="linkedin.com/in/raneesh-prakash-boolkah-774103265"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <ul class="footmenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#portefolio">Portefolio</a></li>
+            <li><a href="#programming-skills">Programming Skills</a></li>
+            <li><a href="#certification">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </ul>
+        <p>©2023 Raneesh Prakash Boolkah | All Rights Reserved</p>
+    </footer>
+    <!--Footer end-->
+    <!--Js script-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--Auto script start-->
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings:["Coding","Website development","Application development"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+    <!--Auto-typing script end-->
+    <!--Navigation tab underline script start-->
+    <script>
+        var subtitleslinks = document.getElementsByClassName("subtitles-links");
+        var subtitlescontents = document.getElementsByClassName("subtitles-content");
+        function opentab(tabname){
+            for(subtitleslink of subtitleslinks){
+                subtitleslink.classList.remove("active-link");
+            }
+            for (subtitlescontent of subtitlescontents) {
+                subtitlescontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");           
+        }
+    </script>
+    <!--Navigation tab underline script end-->
+    <!--Sildeshow script start-->
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!--Swiper for slideshow script end-->
+    <!--Script for opening and closing sidemenu start-->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+    </script>
+    <!--Script for opening and closing sidemenu end-->
+    <!-- Script for sending contact form-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyUrJJ6tvo3vDkV5sgk7-X_5XMLCBTAwlh_dzQg-rjhI7gCOAWL5CIUxQaty1xNP_FM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    </body>
+</html>
